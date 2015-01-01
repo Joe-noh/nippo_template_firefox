@@ -1,3 +1,10 @@
-self.port.on('save', function () {
-  console.log(document.getElementById('edit-template').value);
+var input = document.getElementById('edit-template');
+
+input.addEventListener('keyup', function onkeyup(event) {
+  self.port.emit("entered", input.value);
+}, false);
+
+self.port.on('show', function (template) {
+  input.value = template;
+  input.focus();
 });

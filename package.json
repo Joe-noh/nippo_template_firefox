@@ -7,10 +7,24 @@
   "license": "MPL 2.0",
   "version": "0.1",
 
-  "preferences": [{
-    "name": "editTemplate",
-    "title": "テンプレ編集",
-    "label": "イジる",
-    "type": "control"
-  }]
+  "preferences": [
+    {
+      "type":  "string",
+      "name":  "username",
+      "title": "お名前",
+      "value": "お名前を設定してね！"
+    },
+    {
+      "type":  "control",
+      "name":  "template",
+      "title": "テンプレ編集",
+      "label": "イジる"
+    },
+    {
+      "type":  "string",
+      "name":  "tags",
+      "title": "タグ",
+      "value": "日報"
+    }
+  ]
 }
